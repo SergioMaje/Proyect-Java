@@ -4,6 +4,7 @@
 
 package Ejercicio1;
 
+
 import java.util.Scanner;
 
 
@@ -27,13 +28,17 @@ public class Ejercicio1 {
     public static void main(String[] args) {
         /*primero asignamos las variables*/
         double valorComputadora = 500;
-      Scanner input = new Scanner(System.in)
-              
-      int numeroComputadora;
-      
-      numeroComputadora = input.nextInt();
+      Scanner scanner = new Scanner(System.in);
+      System.out.println("¿Cuantos computadores va a comprar?");
+      int Computadores = scanner.nextInt();
+      int valorComputadores = (int) (valorComputadora*Computadores);
+       double descuento;
+       descuento = valorComputadores*0.1;
+        
+        double valorTotal = valorComputadores - descuento;
+        System.out.println("El valor de los computadores con descuento es" + valorTotal);    
     }
-
+}
    
             
              
@@ -43,5 +48,5 @@ public class Ejercicio1 {
         
         
         
-    }
-}
+  
+
