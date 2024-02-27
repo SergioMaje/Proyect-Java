@@ -28,17 +28,26 @@ public class Ejercicio1 {
     public static void main(String[] args) {
         /*primero asignamos las variables*/
         double valorComputadora = 500;
-      Scanner scanner = new Scanner(System.in);
-      System.out.println("¿Cuantos computadores va a comprar?");
-      int Computadores = scanner.nextInt();
-      int valorComputadores = (int) (valorComputadora*Computadores);
-       double descuento;
-       descuento = valorComputadores*0.1;
-        
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("¿Cuantos computadores va a comprar?");
+        int Computadores = scanner.nextInt();
+        int valorComputadores = (int) (valorComputadora * Computadores);
+        double descuento = 0;
+        if (Computadores < 5) {
+
+            descuento = valorComputadores * 0.1;
+        } else if (Computadores < 10) {
+
+            descuento = valorComputadores * 0.2;
+        } else {
+
+            descuento = valorComputadores * 0.4;
+        }
         double valorTotal = valorComputadores - descuento;
-        System.out.println("El valor de los computadores con descuento es" + valorTotal);    
+        System.out.println("El valor de los computadores con descuento es" + valorTotal);
     }
 }
+
    
             
              
