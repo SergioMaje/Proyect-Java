@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author majes
+ * @author Sergio Majé
  */
 
 /*
