@@ -4,6 +4,8 @@
  */
 package Ejercicios;
 
+import java.util.Scanner;
+
 /**
  *
  * @author majes
@@ -19,5 +21,33 @@ NUM. DE KILOS COMPRADOS % DESCUENTO
 Determinar cuánto pagara una persona que compre manzanas es esa frutería.
 */
 public class Ejercicio4 {
-    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("¿Cuantas manzanas va  a llevar?");
+       int kilos = scanner.nextInt();
+       
+       int precioKilo = 9000;
+       double descuento = 0;
+       double precioAcumulado;
+       double precio; 
+       
+       
+       if (kilos <= 2) { 
+          
+          descuento += 0;
+       }
+       else if (kilos <=5){
+        
+          descuento += 0.10; 
+       }
+       else if (kilos <=10) {
+          descuento += 0.15;
+       }
+       else {
+           descuento += 0.20;
+       }
+       precioAcumulado = precioKilo * kilos;
+       precio = precioAcumulado - (precioAcumulado*descuento);
+       System.out.println("El precio de tu producto es: "+ precio);
+    }
 }
