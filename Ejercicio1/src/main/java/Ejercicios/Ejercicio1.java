@@ -4,58 +4,21 @@
 
 package Ejercicios;
 
-
-import java.util.Scanner;
-
-
-
-/**
- *
- * @author Sergio Majé Montoya
- */
-
-/*
-En una tienda de computadoras se planea ofrecer a los clientes un descuento que dependerá
-del número de equipos que compre. Si las computadoras son menos de cinco se les dará un
-10% de descuento sobre el total de la compra; si el número de computadoras es mayor o igual
-a cinco pero menos de diez se le otorga un 20% de descuento; y si son 10 o más se les da un
-40% de descuento. El precio de cada computadora es de U$500.
-*/
-
-
 public class Ejercicio1 {
-
     public static void main(String[] args) {
-        /*primero asignamos las variables*/
-        double valorComputadora = 500;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("¿Cuantos computadores va a comprar?");
-        int Computadores = scanner.nextInt();
-        int valorComputadores = (int) (valorComputadora * Computadores);
-        double descuento = 0;
-        if (Computadores < 5) {
+        // Definir los números a multiplicar
+        double numero1 = 5;
+        double numero2 = 7;
 
-            descuento = valorComputadores * 0.1;
-        } else if (Computadores < 10) {
+        // Multiplicar los números
+        double resultadoMultiplicacion = numero1 * numero2;
 
-            descuento = valorComputadores * 0.2;
-        } else {
+        // Dividir el resultado por el total de los números
+        double total = numero1 + numero2;
+        double resultadoDivision = resultadoMultiplicacion / total;
 
-            descuento = valorComputadores * 0.4;
-        }
-        double valorTotal = valorComputadores - descuento;
-        System.out.println("El valor de los computadores con descuento es" + valorTotal);
+        // Imprimir el resultado
+        System.out.println("El resultado de la multiplicación es: " + resultadoMultiplicacion);
+        System.out.println("El resultado de la división por el total es: " + resultadoDivision);
     }
 }
-
-   
-            
-             
-                
-            
-        
-        
-        
-        
-  
-
