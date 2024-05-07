@@ -21,7 +21,7 @@ public class Prueba {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       Triangulo triangulo1 = new Triangulo(5,8);
+     Triangulo triangulo1 = new Triangulo(5,8);
      Triangulo triangulo2 = new Triangulo(10, 7);
      Triangulo triangulo3 = new Triangulo(12,4);
      
