@@ -26,6 +26,10 @@ public class Vehiculo {
         this.cuotaMesGaraje = CUOTA_MES_GARAJE_POR_DEFECTO;
         calcularImpuestoCirculacion();
     }
+
+    Vehiculo() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
   
     
     //Setters And Getters - Modifico el set de cuotaMesGaraje para que no pueda elegir un numero negativo

@@ -10,5 +10,5 @@ package GarajeVehiculo;
  */
 interface iGaraje {
     double calcularIngresos();
-    int calcularOcupacionPorVehiculo(Vehiculo v);
+    int calcularOcupacionPorVehiculo(Vehiculo Moto);
 }

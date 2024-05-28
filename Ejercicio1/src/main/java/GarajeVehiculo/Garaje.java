@@ -12,29 +12,31 @@ import java.util.ArrayList;
  */
 public class Garaje implements iGaraje{
     //los atributos
-    private static final int NumeroEspacios = 10;
+    private static final int numeroEspacios = 10;
     private ArrayList<Vehiculo> espacios; 
+    
     
     //el constructor
 
     public Garaje(ArrayList<Vehiculo> espacios) {
         this.espacios = espacios;
-    }
+    }    
 
     Garaje() {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
     
-    
     //metodo en el que agregue un vehiculo en el garaje
     public void agregarVehiculo(Vehiculo vehiculo){
-            if(espacios.size() < NumeroEspacios){
+            if(espacios.size() < numeroEspacios){
                 espacios.add(vehiculo);
                 System.out.println("Se agregó un Vehiculo al garaje");
             } else {
                 System.out.println("El garaje está lleno no pude agregar más");
             }
     }
+    
+    
     
     @Override
     public double calcularIngresos(){
@@ -45,21 +47,30 @@ public class Garaje implements iGaraje{
         return ingresos;
     }
     
- 
-    public int calcularOcupacionPorTipoVehiculo(Vehiculo v){
+    /**
+     *
+     * @param Moto
+     * @return
+     */
+    public int calcularOcupacionPorTipoVehiculo(Vehiculo Moto){
         int contador = 0;
         for (Vehiculo vehiculo : espacios){
-            if (vehiculo.getClass().equals(v.getClass())){
+            if (vehiculo.getClass().equals(Moto.getClass())){
                 contador++;
             }
         }
         return contador; 
     }
+    
+
 
     @Override
-    public int calcularOcupacionPorVehiculo(Vehiculo v) {
+    public int calcularOcupacionPorVehiculo(Vehiculo Moto) {
         throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
+    }   
+ }
     
-}
+    
+
+  
 
