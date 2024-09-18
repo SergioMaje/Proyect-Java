@@ -49,9 +49,27 @@ public class Notas {
             }
         }
         
+        int suma = 0;
+        for(double nota: notas){
+            suma += nota;
+        }
+        
+        double media = suma/notas.length;
+        
+        int contadorAprobadas = 0;
+        
+        for(double nota: notas){
+            if(nota > 5 && nota < 10 ){
+            contadorAprobadas++;
+        }    
+        }
+        
+        
         System.out.println("El número máximo es: " + max);
         System.out.println("El número mínimo es: " + min);
+        System.out.println("Este es el promedio de notas: " + media);
         
+        System.out.println("Las notas que aprobaron fueron: " + contadorAprobadas);
         /*
          for (int i = 0; i < 8; i++) {
             System.out.println("estas son las posiciones " + i);
